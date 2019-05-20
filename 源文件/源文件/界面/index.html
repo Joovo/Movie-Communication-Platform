@@ -1,0 +1,79 @@
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>用户登录</title>
+<link href="./css/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function loginClick() {
+	var name=document.login.username.value;
+	var pwd=document.login.password.value;
+	if(name==null||name.length==0){
+		alert("用户名不能为空！");
+		return;
+	}
+	 if(pwd==null||pwd.length==0){
+		alert("密码不能为空！");
+		return;
+	 }
+	 document.login.submit();
+}
+</script>
+</head>
+<body background="./img/bg1.gif" style=" background-repeat:no-repeat ;
+background-size:100% 100%; 
+background-attachment: fixed;" background-color:#11151D"  back>
+<table class="login_tb1" >
+    <tr align="center" background="./img/top.jpg" style=" background-repeat:no-repeat ;
+      background-attachment: fixed;"valign="middle">
+        <td height="100%">
+        <table class="login_tb2" cellSpacing=0 cellPadding=0 border=0
+            align="center"
+        > 
+            <tr valign="middle">
+                <td " align="center" class="login_td1" colSpan=2><font face="黑体" size="6px" <td width="80" height="20" class="login_td">,<font face="黑体" size="6px" color="antiquewhite">
+                  
+                电影交流平台</font></td>
+            </tr>
+            <tr>
+                
+                <td class="login_td2">
+                <form action="LoginJsp.jsp" name="login" method="post">
+                <table>
+                    <tr>
+                        <td width="80" height="20" class="login_td">,<font face="黑体" size="3px" color="antiquewhite">登录名：</td>
+                        <td width="115" height="20" class="login_td"><input
+                            class="login_input" type="text" name="username"
+                        ></td>
+                        <td></td>
+                    </tr>s
+                    <tr>
+                        <<td width="80" height="20" class="login_td">,<font face="黑体" size="3px" color="antiquewhite">密 码：</td>
+                        <td height="20" class="login_td"><input
+                            type="password" name="password" class="login_input"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="20" colspan="2" align="center"><input
+                            type="reset" value="重置" class="login_button"
+                        />   <input type="button" value="登录"
+                            class="login_button" onClick="loginClick()"
+                        />  </td>
+                        <td class="login_td" align="left" width=71><a
+                            href="Regist.html" <td width="80" height="20" class="login_td">,<font face="黑体" size="3px" color="antiquewhite">
+                        >新用户注册</a></td>
+                    </tr>
+                </table>
+                </form>
+                </td>
+            </tr>
+            <tr>
+              
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
